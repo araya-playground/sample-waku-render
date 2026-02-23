@@ -31,7 +31,7 @@ Use the `render.yaml` file in this directory.
 In the Render Web Service setup page, configure:
 
 - Runtime: `Node`
-- Build Command: `corepack enable && pnpm install --frozen-lockfile && pnpm build`
+- Build Command: `pnpm install --frozen-lockfile && pnpm build`
 - Start Command: `pnpm start`
 - Environment Variable: `NODE_VERSION=25.6.1` (or another version that satisfies Waku requirements)
 
