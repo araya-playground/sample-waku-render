@@ -1,0 +1,18 @@
+{
+  "name": "sample-waku-render",
+  "version": "0.0.0",
+  "packageManager": "pnpm@10.28.2",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "waku dev",
+    "build": "waku build",
+    "start": "waku -h 0.0.0.0 -p ${PORT:-10000} start"
+  },
+  "dependencies": {
+    "react": "~19.2.4",
+    "react-dom": "~19.2.4",
+    "react-server-dom-webpack": "~19.2.4",
+    "waku": "1.0.0-alpha.4"
+  }
+}

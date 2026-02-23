@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: sample-waku-render
+    runtime: node
+    plan: free
+    buildCommand: corepack enable && pnpm install --frozen-lockfile && pnpm build
+    startCommand: pnpm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_VERSION
+        value: 22.17.0
