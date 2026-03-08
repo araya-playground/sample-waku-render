@@ -1,11 +1,9 @@
 const Article = ({ articleId }) => {
   return (
-    <html>
-      <head>
-        <title>Article</title>
-      </head>
-      <body>{articleId}</body>
-    </html>
+    <main>
+      <h1>Article</h1>
+      <p>ID: {articleId}</p>
+    </main>
   );
 };
 
