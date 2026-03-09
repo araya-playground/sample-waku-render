@@ -18,8 +18,8 @@ importers:
         specifier: ~19.2.4
         version: 19.2.4(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(webpack@5.105.2)
       waku:
-        specifier: 1.0.0-alpha.4
-        version: 1.0.0-alpha.4(@types/node@25.3.0)(react-dom@19.2.4(react@19.2.4))(react-server-dom-webpack@19.2.4(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(webpack@5.105.2))(react@19.2.4)(terser@5.46.0)
+        specifier: https://pkg.pr.new/waku@6dfbc99
+        version: https://pkg.pr.new/waku@6dfbc99(@types/node@25.3.0)(react-dom@19.2.4(react@19.2.4))(react-server-dom-webpack@19.2.4(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(webpack@5.105.2))(react@19.2.4)(terser@5.46.0)
 
 packages:
 
@@ -262,8 +262,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@hono/node-server@1.19.9':
-    resolution: {integrity: sha512-vHL6w3ecZsky+8P5MD+eFfaGTyCeOHUIFYMGpQGbrBTSmNNoxv0if69rEZ5giu36weC5saFuznL411gRX7bJDw==}
+  '@hono/node-server@1.19.11':
+    resolution: {integrity: sha512-dr8/3zEaB+p0D2n/IUrlPF1HZm586qgJNXK1a9fhg/PzdtkK7Ksd5l312tJX2yBuALqDYBlG20QEbayqPyxn+g==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
       hono: ^4
@@ -672,8 +672,8 @@ packages:
     resolution: {integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==}
     engines: {node: '>=8'}
 
-  hono@4.12.2:
-    resolution: {integrity: sha512-gJnaDHXKDayjt8ue0n8Gs0A007yKXj4Xzb8+cNjZeYsSzzwKc0Lr+OZgYwVfB0pHfUs17EPoLvrOsEaJ9mj+Tg==}
+  hono@4.12.5:
+    resolution: {integrity: sha512-3qq+FUBtlTHhtYxbxheZgY8NIFnkkC/MR8u5TTsr7YZ3wixryQ3cCwn3iZbg8p8B88iDBBAYSfZDS75t8MN7Vg==}
     engines: {node: '>=16.9.0'}
 
   is-reference@3.0.3:
@@ -919,8 +919,9 @@ packages:
       vite:
         optional: true
 
-  waku@1.0.0-alpha.4:
-    resolution: {integrity: sha512-gZFEaaAL0YWEE55Z5GAggaDkwgpEmkL/ok9uUzq8exykNbXEDAuVd+H/ctXfQqW6VZGZb1aEyEMvjIamDv9igQ==}
+  waku@https://pkg.pr.new/waku@6dfbc99:
+    resolution: {integrity: sha512-hZ8U0GZnErnwlSHXP3R1hwMcjuymRRFDHteYCTbtwXGEXP/FYX0pW7Qkaxwai7Zajd9EFnqkkkPVkl/OB5swXA==, tarball: https://pkg.pr.new/waku@6dfbc99}
+    version: 1.0.0-alpha.5
     engines: {node: ^24.0.0 || ^22.12.0 || ^20.19.0}
     hasBin: true
     peerDependencies:
@@ -1144,9 +1145,9 @@ snapshots:
   '@esbuild/win32-x64@0.27.3':
     optional: true
 
-  '@hono/node-server@1.19.9(hono@4.12.2)':
+  '@hono/node-server@1.19.11(hono@4.12.5)':
     dependencies:
-      hono: 4.12.2
+      hono: 4.12.5
 
   '@jridgewell/gen-mapping@0.3.13':
     dependencies:
@@ -1529,7 +1530,7 @@ snapshots:
 
   has-flag@4.0.0: {}
 
-  hono@4.12.2: {}
+  hono@4.12.5: {}
 
   is-reference@3.0.3:
     dependencies:
@@ -1738,13 +1739,13 @@ snapshots:
     optionalDependencies:
       vite: 7.3.1(@types/node@25.3.0)(terser@5.46.0)
 
-  waku@1.0.0-alpha.4(@types/node@25.3.0)(react-dom@19.2.4(react@19.2.4))(react-server-dom-webpack@19.2.4(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(webpack@5.105.2))(react@19.2.4)(terser@5.46.0):
+  waku@https://pkg.pr.new/waku@6dfbc99(@types/node@25.3.0)(react-dom@19.2.4(react@19.2.4))(react-server-dom-webpack@19.2.4(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(webpack@5.105.2))(react@19.2.4)(terser@5.46.0):
     dependencies:
-      '@hono/node-server': 1.19.9(hono@4.12.2)
+      '@hono/node-server': 1.19.11(hono@4.12.5)
       '@vitejs/plugin-react': 5.1.4(vite@7.3.1(@types/node@25.3.0)(terser@5.46.0))
       '@vitejs/plugin-rsc': 0.5.20(react-dom@19.2.4(react@19.2.4))(react-server-dom-webpack@19.2.4(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(webpack@5.105.2))(react@19.2.4)(vite@7.3.1(@types/node@25.3.0)(terser@5.46.0))
       dotenv: 17.3.1
-      hono: 4.12.2
+      hono: 4.12.5
       magic-string: 0.30.21
       picocolors: 1.1.1
       react: 19.2.4
